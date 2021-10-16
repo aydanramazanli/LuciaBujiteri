@@ -1,0 +1,302 @@
+:root {
+    --green: #003300;
+    --gold: rgb(224, 203, 82);
+    --light-bg: #f4f4f4;
+    --banner-bg: #ddd8d0;
+}
+
+
+/* navbar for desktop */
+
+#navbar {
+    width: 100%;
+    background: var(--light-bg);
+    box-shadow: 0px -13px 13px 5px;
+}
+
+.navbar {
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 155px;
+    height: 70px;
+}
+
+.desktop-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.desktop-nav li a {
+    color: var(--green);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-list:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown {
+    width: 130px;
+    position: absolute;
+    top: 78%;
+    right: 38%;
+    background: var(--light-bg);
+    box-shadow: 0px 4px 11px -3px;
+    visibility: hidden;
+}
+
+.dropdown li {
+    padding: 0.5rem;
+}
+
+.dropdown li:hover {
+    background: var(--gold);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown li a {
+    font-size: 12px;
+}
+
+.dropdown li:hover a {
+    color: var(--light-bg);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* .dropdown {
+    display: none !important;
+} */
+
+.social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons ul li {
+    margin-right: 15px;
+}
+
+.social-icons ul li a i {
+    font-size: 28px;
+    color: var(--green);
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+}
+
+
+/* navbar mini */
+
+@media (min-width: 768px) {
+    #mini-navbar {
+        display: none;
+    }
+}
+
+.mini-nav {
+    width: 100%;
+    line-height: 40px;
+}
+
+.mini-nav li {
+    text-align: center;
+}
+
+.mini-nav li a {
+    color: var(--gold);
+}
+
+.mini-nav li a:hover {
+    color: var(--green);
+}
+
+#mini-navbar {
+    width: 100%;
+    background: var(--light-bg);
+    box-shadow: 0px -13px 13px 5px;
+}
+
+.mini-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+.mini-logo {
+    width: 70px;
+    height: 50px;
+}
+
+.menu i {
+    font-size: 30px;
+    color: var(--gold);
+}
+
+.none {
+    display: none;
+}
+
+
+/* banner */
+
+.carousel-inner {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    left: 20%;
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 20%;
+}
+
+.arrow-icon i {
+    font-size: 30px;
+    color: var(--green);
+}
+
+#carouselExampleIndicators {
+    padding: 1.5rem 0;
+    z-index: 0;
+    background: var(--banner-bg);
+}
+
+.carousel-text {
+    line-height: 99px;
+    right: 15%;
+    bottom: 2%;
+    width: 150px;
+    position: absolute;
+}
+
+.carousel-text h1 {
+    font-size: 90px;
+    color: var(--green);
+    z-index: 200;
+}
+
+
+/* Collection */
+
+#collection {
+    background: var(--light-bg);
+    width: 100%;
+    padding: 4rem 2.5rem;
+}
+
+.collection {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.collection-image {
+    width: 290px;
+    height: 400px;
+}
+
+.js-end {
+    justify-items: end;
+}
+
+.up-radius {
+    border-radius: 200px 200px 0 0;
+}
+
+.down-radius {
+    border-radius: 0 0 200px 200px;
+}
+
+.collection-host {
+    right: 24%;
+    bottom: 0;
+    height: 349px;
+    opacity: 0.4;
+    position: absolute;
+    width: 273px;
+}
+
+.collection-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.collection-title h2 {
+    font-size: 45px;
+    color: var(--green);
+    text-align: end;
+}
+
+
+/* byLucia */
+
+#bylucia {
+    width: 100%;
+}
+
+.bylucia {
+    width: 100%;
+    height: 500px;
+    background: url('../images/fixbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lucia {
+    background: var(--banner-bg);
+    padding: 50px;
+}
+
+.lucia h3,
+h2,
+p {
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lucia h3 {
+    font-size: 20px;
+}
+
+.lucia h2 {
+    font-size: 30px;
+}
+
+.lucia p {
+    line-height: 25px;
+}

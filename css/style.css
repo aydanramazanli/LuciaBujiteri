@@ -279,6 +279,7 @@
 .lucia {
     background: var(--banner-bg);
     padding: 50px;
+    width: 550px;
 }
 
 .lucia h3,
@@ -299,4 +300,44 @@ p {
 
 .lucia p {
     line-height: 25px;
+}
+
+
+/* shop */
+
+#shop {
+    background: var(--light-bg);
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+.shop {
+    width: 85%;
+    margin: auto;
+}
+
+.shop-title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: var(--green);
+}
+
+.shop-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin: 30px 0;
+    gap: 0 0.5rem;
+}
+
+.card-footer {
+    background: transparent;
+    margin: 15px 0;
+}
+
+.card-footer h3 {
+    text-align: center;
+    color: var(--green);
+    font-size: 20px;
 }

@@ -343,6 +343,11 @@ p {
     gap: 0 0.5rem;
 }
 
+.shop-cards .card-img {
+    width: 265px;
+    height: 265px;
+}
+
 .card-footer {
     background: transparent;
     margin: 15px 0;
@@ -578,6 +583,10 @@ p {
     display: none;
 }
 
+.carousel-item {
+    height: 540px;
+}
+
 
 /* Breakpoints */
 
@@ -597,6 +606,9 @@ p {
     .carousel-inner {
         height: 220px;
         margin-top: 20px !important;
+    }
+    .carousel-item {
+        height: 75%;
     }
     .carousel-control-prev {
         left: 15%;
